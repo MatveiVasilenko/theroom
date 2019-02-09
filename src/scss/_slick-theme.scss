@@ -72,7 +72,7 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 77%;
+    top: 80%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -102,10 +102,18 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: 200px;
+    left: 16%;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
+    }
+    &--group {
+        left: 20%;
+        top: 68.5%;
+    }
+    &--portfolio {
+        left: 30%;
+        top: 75%;
     }
     &:before {
         content: $slick-prev-character;
@@ -116,10 +124,18 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: 650px;
+    right: 58%;
     [dir="rtl"] & {
         left: -25px;
         right: auto;
+    }
+    &--group {
+        right: 20%;
+        top: 68.5%;
+    }
+    &--portfolio {
+        right: 30%;
+        top: 75%;
     }
     &:before {
         content: $slick-next-character;
